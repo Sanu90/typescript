@@ -16,13 +16,41 @@
 // console.log("Resultant array is: ",result);
 
 
-function reverse(my_string: string):void{
-    try{
-        const reverse_string: string = my_string.split().reverse().join() 
+// function reverse(my_string: string):void{
+//     try{
+//         const reverse_string: string = my_string.split('').reverse().join('');
+//         console.log("reverse string:",reverse_string);
+//         console.log("type-->",typeof reverse_string);   
+//     }catch(error){
+//         console.log(error);
+        
+//     }
+// }
+
+// reverse("typescript");
+
+
+const prompt=require('prompt-sync')();
+let my_height:number=parseInt(prompt("Enter your height :"));
+function checkisNan(my_height):void{
+try{
+    if(isNaN(my_height)){
+        throw("NotaNumberError");
+    }else if(my_height>200){
+        throw("hugeHeightError");
+    }else if(my_height<40){
+        throw("tinyHeightError");
+    }else{
+        console.log("valid height entered.");
+        
     }
+}catch(error){
+    console.log(error);
 }
 
-
+}
+ 
+checkisNan(my_height);
 
 
 export {}
