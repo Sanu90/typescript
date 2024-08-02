@@ -22,8 +22,39 @@
 
 // console.log(userData.age);
 
+// INTERFACE 
+
+interface data{
+    name:string,
+    age:number,
+    car:boolean,
+    getData(): void
+}
 
 
+let userData:data={
+    name:'sanup',
+    age:34,
+    car:true,
+    getData(){
+        console.log(this.car);   
+    }
+}
+
+let adminData:data={
+    name:'admin',
+    age:41,
+    car:false,
+    getData(){
+        console.log(this.age);    
+    }
+}
+
+const a1:any=adminData
+a1.getData();
+const a2:any=userData
+a2.getData();
+//
 
 
 
