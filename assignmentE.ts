@@ -30,27 +30,46 @@
 // reverse("typescript");
 
 
-const prompt=require('prompt-sync')();
-let my_height:number=parseInt(prompt("Enter your height :"));
-function checkisNan(my_height):void{
-try{
-    if(isNaN(my_height)){
-        throw("NotaNumberError");
-    }else if(my_height>200){
-        throw("hugeHeightError");
-    }else if(my_height<40){
-        throw("tinyHeightError");
-    }else{
-        console.log("valid height entered.");
+// const prompt=require('prompt-sync')();
+// let my_height:number=parseInt(prompt("Enter your height :"));
+// function checkisNan(my_height):void{
+// try{
+//     if(isNaN(my_height)){
+//         throw("NotaNumberError");
+//     }else if(my_height>200){
+//         throw("hugeHeightError");
+//     }else if(my_height<40){
+//         throw("tinyHeightError");
+//     }else{
+//         console.log("valid height entered.");
         
+//     }
+// }catch(error){
+//     console.log(error);
+// }
+
+// }
+ 
+// checkisNan(my_height);
+
+
+
+
+class Car{
+    name: string;
+    mileage:number;
+    max_speed:number
+    constructor(name,mileage,max_speed){
+        this.name=name;
+        this.mileage=mileage;
+        this.max_speed=max_speed;
     }
-}catch(error){
-    console.log(error);
 }
 
-}
- 
-checkisNan(my_height);
+const myClass = new Car('Tavera',15,140);
+console.log(myClass.name);
+console.log(myClass.mileage);
+console.log(myClass.max_speed);
 
 
 export {}
