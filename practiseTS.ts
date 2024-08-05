@@ -57,8 +57,41 @@
 
 // TUPLE
 
-let hello:[string,boolean,string,number]
-hello=['morning',true,'happy',100]
+// let hello:[string,boolean,string,number]
+// hello=['morning',true,'happy',100]
 
-hello[1]=false;
-console.log(hello);
+// hello[1]=false;
+// console.log(hello);
+// hello.shift()
+// console.log(hello);
+
+
+// type status='pending'|'approved'|'rejected';
+
+// let currentStatus:status='approved';
+
+
+// INTERFACE
+
+// interface user{
+//     readonly id: number,
+//     name: string,
+//     email?: string,
+//     phone: number,
+//     gender: string,
+//     display(): string,
+//    // giveCoupon(couponName:string):number
+// }
+
+// const newUser:user={
+//     id:458,
+//     name:'kumar palani',
+//     phone:9510210245,
+//     gender:'male',
+//     display:()=>{
+//         return `Display user details`
+//     }
+// }
+
+// Access specifier
+
