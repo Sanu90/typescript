@@ -46,7 +46,19 @@
 
 // Union
 
+// let data: string | number | boolean =30;
+// data='hello';
+// data=true;
 
-let data: string | number | boolean =30;
-data='hello';
-data=true;
+
+// let data1:number[]=[1,2,3];
+// let data2:string[]=['1','2','3'];
+// let data3:(number|string)[]=['1',2,3,'4'];
+
+// TUPLE
+
+let hello:[string,boolean,string,number]
+hello=['morning',true,'happy',100]
+
+hello[1]=false;
+console.log(hello);
