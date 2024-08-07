@@ -57,11 +57,19 @@
 // //
 
 // GENERICS //
-function print1 <gene>(a:gene):gene{
+// function print1<gen>(a:gen):gen{
+//     return a;
+  
+// }
+
+function print12(a:number|string|boolean):number|string|boolean{
     return a;
 }
 
-console.log(print1(150));
+
+console.log(print12(422))
+console.log(print12('hello'))
+console.log(print12(true))
 
 
 

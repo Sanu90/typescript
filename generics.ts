@@ -17,19 +17,38 @@ function print1(a:number|string|boolean):number|string|boolean{
     return a;
 }
 
-console.log(print1(4))
-console.log(print1('hello'))
-console.log(print1(true))
+// console.log(print1(4))
+// console.log(print1('hello'))
+// console.log(print1(true))
 
 
-//generics 
+//generics 1
 
 function print2 <T> (value:T):T{
     return value;
 }
-console.log(print2("string"));
-console.log(print2(100));
-console.log(print2(false));
+// console.log(print2("string"));
+// console.log(print2(100));
+// console.log(print2(false));
+
+
+//generics 2
+
+let result=<gen> (value:gen):boolean=>{
+    return typeof value === 'object'
+}
+
+console.log(result(10));
+console.log(result([8,6,0,9]));
+console.log(result(null));
+console.log(result({
+    'name':'hariprasad',
+    'job': true,
+    'age':29
+}));
+
+
+
 
 
 
