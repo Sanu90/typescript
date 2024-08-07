@@ -1,0 +1,35 @@
+// GENERICS //
+
+import { log } from "console";
+
+// When we have a function which may return
+// any type which we are not sure of, we need
+// to specify all the possible types in the
+// argument list as well as for the return type.
+// So to specify all of the possible types is not
+// practically possible. So comes the generics function
+// in ts.
+
+
+// this is not practically possible
+
+function print1(a:number|string|boolean):number|string|boolean{
+    return a;
+}
+
+console.log(print1(4))
+console.log(print1('hello'))
+console.log(print1(true))
+
+
+//generics 
+
+function print2 <T> (value:T):T{
+    return value;
+}
+console.log(print2("string"));
+console.log(print2(100));
+console.log(print2(false));
+
+
+
