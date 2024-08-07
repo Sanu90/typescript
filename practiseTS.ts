@@ -88,10 +88,15 @@
 //     name:'kumar palani',
 //     phone:9510210245,
 //     gender:'male',
-//     display:()=>{
+//     display:()=>{interface
 //         return `Display user details`
 //     }
 // }
 
 // Access specifier
+
+
+let a:number=10;
+console.log(a);
+
 
