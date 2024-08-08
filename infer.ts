@@ -1,6 +1,6 @@
 let num=5_000;
 
-number='hello';  
+//number='hello';  
 console.log(num);
 
 // this throws error even if  we doesn't specify the  type for number
@@ -8,3 +8,4 @@ console.log(num);
 // If we hover the variable, we can see the type assigned to it.
 
 // There are many variables for which infer takes place automatically.
+// This is called Infer types or Implicit Types
