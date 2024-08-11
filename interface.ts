@@ -6,22 +6,22 @@
 // }
 
 
-// interface
-
+// INTERFACE //
 
 interface Student{
     name:string;
     age:number;
     class:number;
-    teacher:string
+    teacher?:string;
+    schoolBus:number|boolean;
 }
-
 
 let person:Student={
     name:'hari',
     age: 14,
     class:8,
-    teacher:'kavya'
+    teacher:'kavya',
+    schoolBus:true
 }
 
 
