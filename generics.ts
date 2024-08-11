@@ -51,8 +51,8 @@ function print2 <T> (value:T):T{
 // generics 3
 
 type user={
+    name:string,
     accessTo:string,
-    id:number
 }
 
 type admin={
@@ -61,21 +61,21 @@ type admin={
 }
 
 const userData:user={
-accessTo:'aws',
-id:3258
+    name:"jyoti",
+    accessTo:'database'
 }
 
 const adminData:admin={
-    password:8858,
+    password:45209,
     serverAccess:true
 }
 
-function showData<T>(data:T):T{
-return data;
+function displayData<T>(data:T):T{
+    return data;
 }
 
-console.log(showData<user>(userData));
-console.log(showData<admin>(adminData));
+console.log(displayData(userData));
+console.log(displayData(adminData));
 
 
 
