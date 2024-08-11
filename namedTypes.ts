@@ -1,5 +1,5 @@
-// TYPE //
+// NAMED TYPE or CUSTOM TYPES //
 
-type Status='pending' | 'completed' | 'failed';
+type status='pending' | 'completed' | 'failed';
 
-let statusUpdate:Status="pending";
+let statusUpdate:status='failed'
