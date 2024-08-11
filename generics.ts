@@ -34,19 +34,48 @@ function print2 <T> (value:T):T{
 
 //generics 2
 
-let result=<gen> (value:gen):boolean=>{
-    return typeof value === 'object'
+// let result=<gen> (value:gen):boolean=>{
+//     return typeof value === 'object'
+// }
+
+// console.log(result(10));
+// console.log(result([8,6,0,9]));
+// console.log(result(null));
+// console.log(result({
+//     'name':'hariprasad',
+//     'job': true,
+//     'age':29
+// }));
+
+
+// generics 3
+
+type user={
+    accessTo:string,
+    id:number
 }
 
-console.log(result(10));
-console.log(result([8,6,0,9]));
-console.log(result(null));
-console.log(result({
-    'name':'hariprasad',
-    'job': true,
-    'age':29
-}));
+type admin={
+    password:number,
+    serverAccess:boolean
+}
 
+const userData:user={
+accessTo:'aws',
+id:3258
+}
+
+const adminData:admin={
+    password:8858,
+    serverAccess:true
+}
+
+function showData<T>(data:T):T{
+return data;
+}
+
+console.log(showData<user>(userData));
+console.log(showData<admin>(adminData));
 
 
 
