@@ -50,33 +50,41 @@ function print2 <T> (value:T):T{
 
 // generics 3
 
-type user={
-    name:string,
-    accessTo:string,
+// type user={
+//     name:string,
+//     accessTo:string,
+// }
+
+// type admin={
+//     password:number,
+//     serverAccess:boolean
+// }
+
+// const userData:user={
+//     name:"jyoti",
+//     accessTo:'database'
+// }
+
+// const adminData:admin={
+//     password:45209,
+//     serverAccess:true
+// }
+
+// function displayData<T>(data:T):T{
+//     return data;
+// }
+
+// console.log(displayData(userData));
+// console.log(displayData(adminData));
+
+
+let sum = <T>(a:T):T=>{
+  return a;
 }
 
-type admin={
-    password:number,
-    serverAccess:boolean
-}
-
-const userData:user={
-    name:"jyoti",
-    accessTo:'database'
-}
-
-const adminData:admin={
-    password:45209,
-    serverAccess:true
-}
-
-function displayData<T>(data:T):T{
-    return data;
-}
-
-console.log(displayData(userData));
-console.log(displayData(adminData));
-
+console.log(sum("hello"));
+console.log(sum(5))
+console.log(sum(true));
 
 
 
